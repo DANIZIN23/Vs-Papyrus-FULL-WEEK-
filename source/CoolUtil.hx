@@ -6,7 +6,7 @@ import lime.utils.Assets as LimeAssets;
 import lime.utils.AssetLibrary;
 import lime.utils.AssetManifest;
 import flixel.system.FlxSound;
-#if sys
+#if windows 
 import sys.io.File;
 import sys.FileSystem;
 #else
