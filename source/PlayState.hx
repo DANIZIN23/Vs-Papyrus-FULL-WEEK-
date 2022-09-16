@@ -64,7 +64,7 @@ import StageData;
 import FunkinLua;
 import DialogueBoxPsych;
 import Conductor.Rating;
-#if sys
+#if windows 
 import sys.FileSystem;
 #end
 
