@@ -80,8 +80,7 @@ class Paths
 				}
 			}
 		}
-		// run the garbage collector for good measure lmfao
-	Class<lime.system.System>	System.gc();
+		
 	}
 
 	// define the locally tracked assets
