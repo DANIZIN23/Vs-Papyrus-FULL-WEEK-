@@ -96,7 +96,7 @@ class Main extends Sprite
 		}
 
                 for (vid in videoFiles) {
-			File.saveBytes(Paths.video(vid), Assets.getBytes('videos:' + Paths._video(vid)));
+			
 		}
 	
 		ClientPrefs.loadDefaultKeys();
