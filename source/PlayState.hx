@@ -1697,9 +1697,8 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'bad-to-the-bone':
 					
-					video.playVideo(Paths.video('intro'));
-					video.finishCallback = function() 
-					{
+					
+					
 						papyintro(doof);
 					}
 				case 'dating-fight' | 'bone-brothers':
@@ -4991,8 +4990,8 @@ class PlayState extends MusicBeatState
 							//if(!ClientPrefs.getGameplaySetting('practice', false) && !ClientPrefs.getGameplaySetting('botplay', false))
 								//FreeplayState.songUnlock[2] = true;
 							
-							video.playVideo(Paths.video('final'));
-							video.finishCallback = function() {
+							
+							
 								WeekData.loadTheFirstEnabledMod();
 								FlxG.sound.playMusic(Paths.music('freakyMenu'));
 	
