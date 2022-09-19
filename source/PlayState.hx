@@ -5152,10 +5152,7 @@ class PlayState extends MusicBeatState
 	#end
 
 	
-		while(notes.length > 0) {
-			var daNote:Note = notes.members[0];
-			daNote.active = false;
-			daNote.visible = false;
+		
 
 			daNote.kill();
 			notes.remove(daNote, true);
