@@ -40,7 +40,7 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		#if windows 'mods', #end
+		
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
 		'options'
@@ -56,7 +56,7 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
-		#if MODS_ALLOWED
+		#if windows 
 		Paths.pushGlobalMods();
 		#end
 		WeekData.loadTheFirstEnabledMod();
