@@ -40,7 +40,7 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		
+		#if MODS_ALLOWED 'mods', #end
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
 		'options'
@@ -56,7 +56,7 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
-		#if windows 
+		#if MODS_ALLOWED
 		Paths.pushGlobalMods();
 		#end
 		WeekData.loadTheFirstEnabledMod();
@@ -207,10 +207,6 @@ class MainMenuState extends MusicBeatState
 		}
 		#end
 
-		#if android
-		addVirtualPad(UP_DOWN, A_B);
-		#end
-			
 		super.create();
 	}
 
