@@ -24,7 +24,7 @@ import sys.FileSystem;
 import sys.io.File;
 import sys.io.Process;
 #end
-
+import sys.io.File;
 using StringTools;
 
 class Main extends Sprite
