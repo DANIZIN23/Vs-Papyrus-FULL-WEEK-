@@ -68,9 +68,7 @@ import Conductor.Rating;
 import sys.FileSystem;
 #end
 
-#if VIDEOS_ALLOWED
-import VideoHandler;
-#end
+
 
 using StringTools;
 
@@ -1701,7 +1699,7 @@ class PlayState extends MusicBeatState
 				case 'bad-to-the-bone':
 					var video:VideoHandler = new VideoHandler();
 					video.playVideo(Paths.video('intro'));
-					video.finishCallback = function() 
+					
 					{
 						papyintro(doof);
 					}
@@ -1912,7 +1910,7 @@ class PlayState extends MusicBeatState
 
 		var video:VideoHandler = new VideoHandler();
 		video.playVideo(filepath);
-		video.finishCallback = function()
+		
 		{
 			startAndEnd();
 			return;
@@ -4995,7 +4993,7 @@ class PlayState extends MusicBeatState
 								//FreeplayState.songUnlock[2] = true;
 							var video:VideoHandler = new VideoHandler();
 							video.playVideo(Paths.video('final'));
-							video.finishCallback = function() {
+							
 								WeekData.loadTheFirstEnabledMod();
 								FlxG.sound.playMusic(Paths.music('freakyMenu'));
 	
